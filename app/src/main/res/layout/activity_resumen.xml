@@ -9,10 +9,15 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:layout_marginVertical="15dp"
+        android:background="@drawable/cardview_resumen"
+        android:layout_margin="15dp"
+        android:elevation="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:text="RESUMEN"
+            android:background="@drawable/cardview_redondo_azul"
+            android:layout_margin="20dp"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -22,20 +27,25 @@
 
         <LinearLayout
             android:id="@+id/llInfo"
+            android:background="@drawable/cardview_rectangulo_azul"
             android:orientation="vertical"
+            android:padding="8dp"
             android:layout_marginVertical="20dp"
-            android:layout_marginHorizontal="40dp"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
 
-        <Button
+        <TextView
             android:id="@+id/btnFinalizar"
             android:text="FINALIZAR"
-            android:textColor="@color/azulBackground"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_marginHorizontal="30dp"
-            android:backgroundTint="@color/white"
+            android:paddingVertical="20dp"
+            android:background="@drawable/cardview_redondo_azul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />

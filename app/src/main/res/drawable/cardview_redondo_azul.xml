@@ -32,8 +32,8 @@
     </padding>
 
     <!-- Aquí indicamos el radio a aplicar a las esquinas -->
-    <!--<corners
+    <corners
         android:radius="35dp"   >
-    </corners>-->
+    </corners>
 
 </shape>

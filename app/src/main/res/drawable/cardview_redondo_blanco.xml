@@ -6,9 +6,9 @@
     <!-- Color de fondo de la vista -->
     <gradient
         android:angle="120"
-        android:endColor="#919191"
+        android:endColor="@color/white"
         android:gradientRadius="50%"
-        android:startColor="#919191"
+        android:startColor="@color/white"
         android:centerColor="@color/white"
         android:type="linear"/>
 

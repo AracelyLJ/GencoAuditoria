@@ -6,68 +6,46 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cardview_redondo_azul"
     tools:context="com.ara.gencoauditoria.MainActivity">
 
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="match_parent"
+        android:layout_height="438dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cardview_redondo_dorado"
+        android:src="@mipmap/ic_logo_foreground" />
+
+
     <LinearLayout
+        android:id="@+id/btnAuditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/cardview_redondo_azul"
+        android:layout_margin="20dp"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/cardview_redondo_blanco"
+        android:elevation="30dp"
+        android:outlineSpotShadowColor="@color/dorado1"
         android:gravity="center"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_gravity="center"
-            android:background="@drawable/cardview_redondo_dorado"
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="qr1.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:text="AUDITAR"
+            android:textSize="25dp"
+            android:textColor="@color/azulBackground"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:elevation="15dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:layout_width="246dp"
-                android:layout_height="266dp"
-                android:layout_gravity="center"
-                android:src="@mipmap/ic_logo_foreground" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:background="@drawable/cardview_rectangulo_dorado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/btnAuditar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="15dp"
-                android:background="@drawable/cardview_redondo_blanco"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <com.airbnb.lottie.LottieAnimationView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    app:lottie_autoPlay="true"
-                    app:lottie_fileName="qr1.json"
-                    app:lottie_imageAssetsFolder="assets"
-                    app:lottie_loop="true" />
-
-                <TextView
-                    android:text="AUDITAR"
-                    android:textSize="25dp"
-                    android:textColor="@color/azulBackground"
-                    android:textStyle="bold"
-                    android:paddingBottom="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-        </LinearLayout>
-
-
-
+            android:layout_height="wrap_content"/>
     </LinearLayout>
-
-
-
 
 </LinearLayout>

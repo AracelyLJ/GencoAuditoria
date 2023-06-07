@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,7 @@ import java.util.List;
 
 public class Resumen extends AppCompatActivity {
 
-    private Button btnFinalizar;
+    private TextView btnFinalizar;
     private LinearLayout llInfo;
     private String resultado;
 
@@ -78,19 +79,32 @@ public class Resumen extends AppCompatActivity {
 
             TextView tvKey = new TextView(this);
             TextView tvValue = new TextView(this);
+            View line = new View(this);
 
 
             tvKey.setTextColor(getColor(R.color.white));
             tvKey.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
             tvKey.setText(key);
+            tvKey.setTypeface(Typeface.defaultFromStyle(Typeface.ITALIC));
+//            tvKey.setBackgroundColor(getColor(R.color.dorado1));
+//            tvKey.setElevation(60);
+//            tvKey.setShadowLayer(15,100,10,R.color.white);
 
             tvValue.setTextColor(getColor(R.color.white));
             tvValue.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
             tvValue.setText(value);
+            tvValue.setPadding(0,0,0,20);
+            tvValue.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
 
 
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT, 4
+            );
+            line.setLayoutParams(params);
+            line.setBackgroundResource(R.drawable.cardview_rectangulo_dorado);
             llInfo.addView(tvKey);
             llInfo.addView(tvValue);
+            llInfo.addView(line);
 
         }
 
@@ -103,5 +117,12 @@ public class Resumen extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(Resumen.this, MainActivity.class);
+        startActivity(intent);
     }
 }
