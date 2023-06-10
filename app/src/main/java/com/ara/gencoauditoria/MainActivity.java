@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +28,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        checarPermisos();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+            checarPermisos();
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+            builder.setMessage("Por favor, asegúrate de que los permisos estén activados (CONFIG -> APPS ->" +
+                            "App info -> GencoAuditoria -> Permisos")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    })
+                    .setCancelable(false).show();
+        }
         
         btnAuditar = findViewById(R.id.btnAuditar);
         btnAuditar.setOnClickListener(new View.OnClickListener() {
