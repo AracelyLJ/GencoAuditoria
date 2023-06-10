@@ -4,13 +4,7 @@
     android:shape="rectangle">
 
     <!-- Color de fondo de la vista -->
-    <gradient
-        android:angle="120"
-        android:endColor="@color/white"
-        android:gradientRadius="50%"
-        android:startColor="@color/white"
-        android:centerColor="@color/white"
-        android:type="linear"/>
+    <solid android:color="@color/white"/>
 
     <!-- Color y ancho del borde del elemento -->
 
