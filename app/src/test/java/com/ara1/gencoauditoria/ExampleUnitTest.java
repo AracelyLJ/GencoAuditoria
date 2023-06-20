@@ -1,4 +1,4 @@
-package com.ara.gencoauditoria;
+package com.ara1.gencoauditoria;
 
 import org.junit.Test;
 

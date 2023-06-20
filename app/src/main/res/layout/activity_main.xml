@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cardview_redondo_azul"
-    tools:context="com.ara.gencoauditoria.MainActivity">
+    tools:context="com.ara1.gencoauditoria.MainActivity">
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:layout_width="match_parent"

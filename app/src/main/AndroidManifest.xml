@@ -19,13 +19,13 @@
         android:theme="@style/Theme.GencoAuditoria"
         tools:targetApi="31">
         <activity
-            android:name="com.ara.gencoauditoria.Resumen"
+            android:name="com.ara1.gencoauditoria.Resumen"
             android:exported="false" />
         <activity
-            android:name="com.ara.gencoauditoria.QRCodeReader"
+            android:name="com.ara1.gencoauditoria.QRCodeReader"
             android:exported="false" />
         <activity
-            android:name="com.ara.gencoauditoria.MainActivity"
+            android:name="com.ara1.gencoauditoria.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

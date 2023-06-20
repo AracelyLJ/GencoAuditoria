@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.gencoauditoria'
+    namespace 'com.ara1.gencoauditoria'
     compileSdk 33
 
     defaultConfig {
-        applicationId 'com.ara.gencoauditoria'
+        applicationId 'com.ara1.gencoauditoria'
         minSdk 24
         targetSdk 33
         versionCode 3

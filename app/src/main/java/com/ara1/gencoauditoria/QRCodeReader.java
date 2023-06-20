@@ -1,16 +1,15 @@
-package com.ara.gencoauditoria;
+package com.ara1.gencoauditoria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
-import com.example.gencoauditoria.R;
+import com.ara1.gencoauditoria.R;
 
 public class QRCodeReader extends AppCompatActivity {
 

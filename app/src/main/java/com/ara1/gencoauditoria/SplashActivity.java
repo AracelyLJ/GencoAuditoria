@@ -1,4 +1,4 @@
-package com.ara.gencoauditoria;
+package com.ara1.gencoauditoria;
 
 import android.content.Intent;
 import android.os.Bundle;

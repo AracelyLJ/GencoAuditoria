@@ -1,22 +1,19 @@
-package com.ara.gencoauditoria;
+package com.ara1.gencoauditoria;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
-import com.example.gencoauditoria.R;
+import com.ara1.gencoauditoria.R;
 
 public class MainActivity extends AppCompatActivity {
     
