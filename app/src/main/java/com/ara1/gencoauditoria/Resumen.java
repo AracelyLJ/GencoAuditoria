@@ -54,16 +54,16 @@ public class Resumen extends AppCompatActivity {
             String value = r2[1];
             switch (key){
                 case "GT":
-                    key = "Ganancia Total";
+                    key = "\nGanancia total x Venta Total";
                     break;
                 case "GP":
-                    key = "Ganancia Parcial (desde el ultimo QR generado)";
+                    key = "\nGanancia Parcial x Venta Parcial";
                     break;
                 case "T.T1":
-                    key = "Total Token 1 (Historico total de los token 1 dispensados)";
+                    key = "\nTotal de toquens por:\n\nTotal de Medallas (Histórico total de medallas dispensadas)";
                     break;
                 case "P.T1":
-                    key = "Parcial Token 1 (Historitco parcial desde ultimo Qr de los token 1)";
+                    key = "\nParcial de Medallas ( Histórico parcial de medallas dispensadas desde el último QR) \n";
                     break;
                 default:
                     continue;

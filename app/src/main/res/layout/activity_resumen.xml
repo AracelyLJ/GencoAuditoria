@@ -3,21 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context="com.ara1.gencoauditoria.Resumen">
 
     <LinearLayout
-        android:layout_gravity="center"
         android:orientation="vertical"
-        android:layout_marginVertical="15dp"
         android:background="@drawable/cardview_resumen"
-        android:layout_margin="15dp"
-        android:elevation="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:text="RESUMEN"
             android:background="@drawable/cardview_redondo_azul"
-            android:layout_margin="20dp"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold"
